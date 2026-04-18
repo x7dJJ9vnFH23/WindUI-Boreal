@@ -1,9 +1,8 @@
 -- WindUI Boreal
 -- Version: v0.0.1
--- BuildDate: 2026-02-23
+-- BuildDate: 2026-04-18
 -- Description: Roblox UI Library for scripts
--- Repository: https://github.com/orialdev/WindUI-Boreal
--- Discord: http://discord.gg/B3dEqP2EX6
+-- Discord: http://discord.gg/pEzmU5Argx
 -- License: MIT
 
 local a={cache={}::any}do do local function __modImpl()local b=(cloneref or clonereference or function(b)return b end)
@@ -573,8 +572,8 @@ p.UpdateTheme(nil,false)
 end
 
 function p.AddFontObject(r)
-table.insert(p.FontObjects,r)
-p.UpdateFont(p.Font)
+    table.insert(p.FontObjects, r)
+    r.FontFace = Font.new(p.Font, r.FontFace.Weight, r.FontFace.Style)
 end
 
 function p.UpdateFont(r)
