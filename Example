@@ -1,13 +1,13 @@
-local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/orialdev/WindUI-Boreal/main/WindUI%20Boreal"))()
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/x7dJJ9vnFH23/WindUI-Boreal/refs/heads/main/WindUI%20Boreal"))()
 
 local Window = WindUI:CreateWindow({
-    Title = "WindUI Boreal",
+    Title = "WindUI Shiny",
     Size = UDim2.fromOffset(740, 560),
     Icon = "sparkles",
     ModernLayout = true,
     Watermark = {
         Enabled = true,
-        Text = "WindUI Boreal | Example",
+        Text = "WindUI Shiny | Example",
         Opacity = 0.45,
         Position = "bottom-right", -- top-left/top-center/top-right/center/.../bottom-right
         Size = 14,
