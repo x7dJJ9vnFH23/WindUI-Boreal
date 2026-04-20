@@ -985,7 +985,7 @@ if A==nil then
 A=J
 B=true
 C=L.Position
-F=v.Position
+F=v.Position or UDim2.new(0.5,0,0.5,0)
 
 if z and typeof(z)=="function"then
 z(true,A)
