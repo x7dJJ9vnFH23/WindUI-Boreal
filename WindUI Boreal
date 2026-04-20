@@ -5710,7 +5710,7 @@ aj.Visible=ar.Draggable
 ak.Visible=ar.Draggable
 
 if ao then
-ao:Set(ar.Draggable)
+ao:Set(false)
 end
 end
 
