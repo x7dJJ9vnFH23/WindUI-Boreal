@@ -969,6 +969,7 @@ end
 
 local function update(H)
 if not B or not G.CanDraggable then return end
+if not F or not C then return end
 
 local J=H.Position-C
 p.Tween(v,0.02,{Position=UDim2.new(
