@@ -2738,7 +2738,7 @@ task.spawn(function()
 ah.UIElements.MainContainer.Visible=true
 
 if not af then
-ac(ah.UIElements.FullScreen,0.1,{BackgroundTransparency=.3}):Play()
+ac(ah.UIElements.FullScreen,0.1,{BackgroundTransparency=0.3}):Play()
 end
 ac(ah.UIElements.MainContainer,0.1,{ImageTransparency=0}):Play()
 
@@ -2754,7 +2754,7 @@ if not af then
 ac(ah.UIElements.FullScreen,0.1,{BackgroundTransparency=1}):Play()
 ah.UIElements.FullScreen.Active=false
 task.spawn(function()
-task.wait(.1)
+task.wait(0.1)
 ah.UIElements.FullScreen.Visible=false
 end)
 end
@@ -2765,7 +2765,7 @@ ac(ah.UIElements.MainContainer,0.1,{ImageTransparency=1}):Play()
 
 
 task.spawn(function()
-task.wait(.1)
+task.wait(0.1)
 if not af then
 ah.UIElements.FullScreen:Destroy()
 else
@@ -16475,7 +16475,7 @@ BottomDragBarEnabled=not(au.BottomDragBarEnabled==false or au.BottomDragEnabled=
 WatermarkConfig=au.Watermark,
 
 Position=UDim2.new(0.5,0,0.5,0),
-UICorner=nil,
+UICorner=16,
 UIPadding=14,
 UIElements={},
 CanDropdown=true,
@@ -17807,20 +17807,20 @@ end
 
 al(b,0.25,{ImageTransparency=av.ShadowTransparency},Enum.EasingStyle.Quint,Enum.EasingDirection.Out):Play()
 if h then
-al(h,0.25,{Transparency=.8},Enum.EasingStyle.Quint,Enum.EasingDirection.Out):Play()
+al(h,0.25,{Transparency=0.8},Enum.EasingStyle.Quint,Enum.EasingDirection.Out):Play()
 end
 
 task.spawn(function()
-task.wait(.3)
+task.wait(0.3)
 if av.BottomDragBarEnabled then
 r.Visible=true
-al(r,.45,{Size=UDim2.new(0,200,0,4),ImageTransparency=.8},Enum.EasingStyle.Exponential,Enum.EasingDirection.Out):Play()
+al(r,0.45,{Size=UDim2.new(0,200,0,4),ImageTransparency=0.8},Enum.EasingStyle.Exponential,Enum.EasingDirection.Out):Play()
 end
 z:Set(true)
-task.wait(.45)
+task.wait(0.45)
 if av.Resizable then
 if az then
-al(az,.45,{ImageTransparency=.8},Enum.EasingStyle.Exponential,Enum.EasingDirection.Out):Play()
+al(az,0.45,{ImageTransparency=0.8},Enum.EasingStyle.Exponential,Enum.EasingDirection.Out):Play()
 end
 av.CanResize=true
 end
@@ -17831,7 +17831,7 @@ av.CanDropdown=true
 
 av.UIElements.Main.Visible=true
 task.spawn(function()
-task.wait(.05)
+task.wait(0.05)
 av.UIElements.Main:WaitForChild"Main".Visible=true
 
 au.WindUI:ToggleAcrylic(true)
